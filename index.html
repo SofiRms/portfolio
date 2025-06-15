@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#081b29" />
+    <meta
+      name="description"
+      content="Sofia Ramos's Portfolio - full-stack developer"
+    />
+    <title>Sofía Ramos - Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="photo.jpg" />
+  </head>
+  <body>
+    <canvas class="network-canvas" id="networkCanvas"></canvas>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#skills-title" style="--i: 4">Skills</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Presentation -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi there, It's Me</h3>
+        <h1>Ramos Sofía</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>A passionate developer creating amazing web experiences</p>
+        <div class="home-sci">
+          <a href="https://www.instagram.com/inupama0724/" style="--i: 6"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/sofiramos22/" style="--i: 7"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/SofiRms/" style="--i: 8"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <a href="Ramos, Sofía CV.pdf" class="btn-box" download>Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="photo.jpg" alt="Profile Photo" />
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p>Soy una Desarrolladora Fullstack con una profunda pasión por el backend y la construcción de arquitecturas robustas y escalables. Me entusiasma el desarrollo con Inteligencia Artificial y estoy en constante aprendizaje, explorando las últimas tecnologías para crear soluciones innovadoras.</p>
+        <a href="https://www.linkedin.com/in/sofiramos22/" class="btn-box"
+          >More About Me</a
+        >
+      </div>
+    </section>
+
+    <!-- Skills -->
+<h1 class="sub-title">My <span> Stack</span></h1>
+<div class="skills-section"  style="margin-bottom: 4rem;">
+  <h3>Languages</h3>
+  <ul>
+    <li style="--i:1"><i class='bx bxl-javascript'></i> JavaScript</li>
+    <li style="--i:2"><i class='bx bxl-typescript'></i> TypeScript</li>
+    <li style="--i:3"><i class='bx bxl-python'></i> Python</li>
+    <li style="--i:4"><i class='bx bx-terminal'></i> Rust</li>
+  </ul>
+
+  <h3>Frameworks</h3>
+  <ul>
+    <li style="--i:5"><i class='bx bxl-react'></i> React</li>
+    <li style="--i:6"><i class='bx bxl-react'></i> React Native</li>
+    <li style="--i:8"><i class='bx bx-code'></i> NodeJS</li>
+    <li style="--i:8"><i class='bx bx-server'></i> NestJS</li>
+    <li style="--i:7"><i class='bx bx-code-curly'></i> Svelte</li>
+    <li style="--i:7"><i class='bx bx-code-curly'></i> Boostrap</li>
+
+  </ul>
+
+  <h3>Databases</h3>
+  <ul>
+    <li style="--i:9"><i class='bx bxl-mongodb'></i> MongoDB</li>
+    <li style="--i:10"><i class='bx bxl-postgresql'></i> PostgreSQL</li>
+    <li style="--i:11"><i class='bx bx-data'></i> MySQL</li>
+  </ul>
+
+  <h3>DevOps / Infrastructure</h3>
+  <ul>
+    <li style="--i:12"><i class='bx bxl-docker'></i> Docker</li>
+    <li style="--i:13"><i class='bx bxl-amazon'></i> AWS S3</li>
+    <li style="--i:14"><i class='bx bx-book-alt'></i> Swagger</li>
+  </ul>
+
+  <h3>Tools</h3>
+  <ul>
+    <li style="--i:15"><i class='bx bxl-git'></i> Git</li>
+    <li style="--i:16"><i class='bx bxl-github'></i> GitHub</li>
+    <li style="--i:15"><i class='bx bx-code'></i> Openai API</li>
+    <li style="--i:17"><i class='bx bx-task'></i> JIRA</li>
+  </ul>
+</div>
+
+    <!-- Certificates -->
+    <section>
+      <h1 class="sub-title">My <span>Certificates</span></h1>
+
+      <div class="certificates-list">
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/cibersecurity.jpg"
+            alt="Cibersecurity Technician"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/databricks.jpg"
+            alt="Gen AI"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/Sofía Ramos - Computer Vision by Kaggle.png"
+            alt="Computer Vision"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/gpu certificate.jpg"
+            alt="Deep Learning With GPU"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="/images/coursera s3.jpg"
+            alt="Computer Vision"
+            loading="lazy"
+          />
+        </div>
+    </div>
+    </section>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <div class="container2">
+        <div class="contact" id="contact">
+          <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work together</h4>
+            <p>
+              I'm always interested in hearing about new opportunities, creative
+              projects, or chances to collaborate. Feel free to reach out!
+            </p>
+            <div class="contact-list">
+              <li>
+                <i class="bx bxl-gmail"></i> ramossofiamagali679@gmail.com
+              </li>
+              <li><i class="bx bx-phone"></i> (+54) 9 3705012851</li>
+            </div>
+            <div class="contact-icons">
+              <a href="https://www.instagram.com/sofii_ramoss15/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sofiramos22/"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="https://github.com/SofiRms/"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="last-text">
+      <h3>Sofía Ramos</h3>
+      <p>Sofía Ramos. All rigths reserved</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
